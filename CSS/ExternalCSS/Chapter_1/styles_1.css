@@ -1,0 +1,17 @@
+h3{
+    color: navy;
+}
+
+p{
+    color: red;
+}
+
+.Chicha{
+    color:cornflowerblue ;
+}
+input[type="text"][id="1"]{
+    color: deepskyblue;
+}
+input[type="text"][id="2"]{
+    color: red;
+}
