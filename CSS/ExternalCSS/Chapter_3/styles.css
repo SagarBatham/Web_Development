@@ -53,6 +53,7 @@
     display: flex;
     /* background-color: black; */
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 #child1{
