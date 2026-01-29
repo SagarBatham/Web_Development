@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+.parent{
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap
+    /* justify-content: center;
+    justify-content: space-between; */
+}
+.child{
+    height: 200px;
+    width: 300px;
+    background-color: red;
+    border: 2px solid black;
+    flex-shrink: 0;;
+}
+
+
+/* @media(min-width:768px){
+    .parent{
+        background-color: black;
+        width: 300px;
+        height: 300px;
+    }
+} */
+/* @media(max-width:768px){
+    .parent{
+        background-color: black;
+        width: 300px;
+        height: 300px;
+    }
+} */

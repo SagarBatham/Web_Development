@@ -1,0 +1,46 @@
+
+/* button:hover{
+    color: red;
+}
+input:focus{
+    color: red;
+}
+li::before{
+    content: "Read  ";
+} */
+/* button{
+    background-color: aqua;
+    color: red;
+    transition: all ease-in .5s;
+}
+button:hover{
+    color: blue;
+} */
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: hii 10s 1s both;
+    /* transition: all linear 0.5s; */
+     /* transform: translate(100px,100px); */
+     /* transform: scale(0.5) */
+     /* transform: skew(20deg,0); */
+}
+.box:hover{
+    transform: translate(100px,100px);
+}
+@keyframes hii{
+    /* from{
+        background-color: red;
+    }
+    to{background-color: green;} */
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        color:red
+    }
+}
