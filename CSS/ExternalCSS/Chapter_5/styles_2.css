@@ -6,22 +6,23 @@
 html,body{
     height: 100%;
 }
-.parent{
+/* .parent{
     height: 500px;
     width: 100%;
     background-color: aqua;
     display: flex;
-    flex-wrap: wrap
-    /* justify-content: center;
-    justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
 }
 .child{
-    height: 200px;
+    height: 300px;
     width: 300px;
+    flex-grow: 1;
     background-color: red;
     border: 2px solid black;
     flex-shrink: 0;;
-}
+} */
 
 
 /* @media(min-width:768px){
@@ -37,4 +38,41 @@ html,body{
         width: 300px;
         height: 300px;
     }
+} */
+.parent{
+    width: 300px;
+    height: 300px;
+    background-color: wheat;
+    border: 2px solid black;
+
+    display: grid;
+    
+    /* grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px; */
+    grid-template-areas: 
+            "a  .  ."
+            ".  b  ."
+            ".  .  c"
+            ;
+}
+
+.child{
+    background-color: crimson;
+    border: 2px solid black;
+}
+.child-a{
+    grid-area: a;
+    background-color: rebeccapurple;
+}
+.child-b{
+    grid-area: b;
+    background-color: yellow;
+}
+.child-c{
+    grid-area: c;
+    background-color: blue;
+}
+/* .child-d{
+    grid-area: d;
+    background-color: greenyellow;
 } */
