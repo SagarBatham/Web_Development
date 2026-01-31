@@ -12,9 +12,9 @@
     width: 200px;
     background-color: crimson;
     position: absolute;
-    top: 50%;
-    right: 50%;
-    z-index: 50;
+    top: 0%;
+    right: 20%;
+    z-index: 70;
 }
 #box2{
     height: 200px;
@@ -44,17 +44,17 @@
     width: 200px;
     background-color: lightblue;
     position: absolute;
-    left: 50%;
+    left: 0%;
     bottom: 0%;
 } */
 #parent{
     height: 100%;
     width: 100%;
     display: flex;
-    /* background-color: black; */
+    background-color: black;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction:column;
+    /* justify-content: space-between; */
 }
 #child1{
     height: 200px;
@@ -66,8 +66,8 @@
     height: 200px;
     width: 200px;
     background-color: lightcoral;
-    /* position: absolute;
-    left: 200px; */
+    /* position: absolute; */
+    /* left: 200px; */
 }
 #child3{
     height: 200px;

@@ -5,30 +5,32 @@
 input:focus{
     color: red;
 }
-li::before{
-    content: "Read  ";
+li::after{
+    content: " Read  ";
 } */
-/* button{
+button{
     background-color: aqua;
     color: red;
-    transition: all ease-in .5s;
+    transition: all ease-in 2s;
+    border-radius: 20px;
 }
 button:hover{
     color: blue;
-} */
+}
 .box{
     width: 200px;
     height: 200px;
     background-color: red;
-    animation: hii 10s 1s both;
-    /* transition: all linear 0.5s; */
-     /* transform: translate(100px,100px); */
-     /* transform: scale(0.5) */
-     /* transform: skew(20deg,0); */
+    animation: hii 5s 1s both;
+    transition: all linear 0.5s;
+    /* transform: translate(100px,100px); */
+     /* transform: scale(0.5); */
+     /* transform: skew(20deg,); */
 }
-.box:hover{
+/* .box:hover{
     transform: translate(100px,100px);
-}
+    transform: scale(0.5);
+} */
 @keyframes hii{
     /* from{
         background-color: red;
@@ -37,10 +39,19 @@ button:hover{
     0%{
         background-color: red;
     }
-    50%{
+    25%{
         background-color: yellow;
     }
+    50%{
+        background-color:blue;
+    }
+    75%{
+        background-color:orange;
+    }
+    90%{
+        background-color:violet;
+    }
     100%{
-        color:red
+        background-color: red;
     }
 }

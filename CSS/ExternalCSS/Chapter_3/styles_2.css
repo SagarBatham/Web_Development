@@ -10,7 +10,7 @@ html, body {
     display: flex;
     padding: 40px;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
 }
 #child{
@@ -19,6 +19,6 @@ html, body {
     background-size: cover;
     width: 200px;
     height: 200px;
-    background-color: crimson;
-    border: 3px solid wheat;
+    /* background-color: crimson; */
+    border: 2px solid black;
 }
