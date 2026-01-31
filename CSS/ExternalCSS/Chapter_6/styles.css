@@ -46,6 +46,7 @@ img{
 
 .image-a{
     grid-area: a;
+    background-position: bottom;
 }
 .image-b{
     grid-area: b;

@@ -5,61 +5,67 @@
 }
 html,body{
     height: 100%;
+    width: 100%;
 }
-.parent{
+/* .parent{
     height: 500px;
     width: 100%;
     background-color: aqua;
     
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    justify-content: space-between; */
-}
-.child{
+    justify-content: center;
+    justify-content: space-between;
+} */
+/* .child{
     height: 300px;
     width: 300px;
-    /* flex-grow: 5; */
+    flex-grow: 1;
     background-color: red;
     border: 2px solid black;
-    /* flex-shrink: 0; */
+    flex-shrink: 0;
+} */
+
+
+@media(min-width:768px){
+    .parent{
+        background-color: black;
+        width: 300px;
+        height: 300px;
+    }
 }
-
-
-/* @media(min-width:768px){
+@media(max-width:768px){
     .parent{
         background-color: black;
         width: 300px;
         height: 300px;
     }
-} */
-/* @media(max-width:768px){
-    .parent{
-        background-color: black;
-        width: 300px;
-        height: 300px;
-    }
-} */
-/* .parent{
-    width: 300px;
-    height: 300px;
+}
+.parent1{
+    width: 400px;
+    height: 400px;
     background-color: wheat;
     border: 2px solid black;
 
     display: grid;
     
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px;
-    grid-template-areas: 
-            "a  .  ."
-            ".  b  ."
-            ".  .  c"
-            ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    /* grid-template-columns: 10px; */
+    /* grid-template-rows: 100px 100px; */
+    /* grid-template-areas: 
+            "a  .  . ."
+            ".  b  .  ."
+            ".  .  c   ."
+            "d  d  d   d"; */
 }
 
 .child{
     background-color: crimson;
     border: 2px solid black;
+    width: 20px;
+    height: 20px;
 }
 .child-a{
     grid-area: a;
@@ -76,4 +82,4 @@ html,body{
 .child-d{
     grid-area: d;
     background-color: greenyellow;
-} */
+}
