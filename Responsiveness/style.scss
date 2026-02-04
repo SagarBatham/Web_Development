@@ -1,3 +1,7 @@
+@mixin light-weight-font{
+    font-weight: 200;
+    opacity: 0.8;
+}
 *{
     margin: 0;
     padding: 0;
@@ -30,12 +34,12 @@ main{
     gap:1.5rem;
     p{
         font-size: 1rem;
-        font-weight: 300;
+        @include light-weight-font();
     }
     h1{
         width: 70%;
         font-size: 3rem;
-        font-weight: 500;
+         @include light-weight-font();
     }
     img{
         margin-top: 1rem;
@@ -45,17 +49,17 @@ main{
         border-radius: 10px;
     }
 }
-@media(min-width:1020px){
+@media(min-width:1440px){
     main{
         padding:2rem;
     }
     .section-1{
         p{
             font-size: 3rem;
-            font-weight: 300;
+             @include light-weight-font();
         }
         h1{
-            font-weight: 400;
+             @include light-weight-font();
             font-size: 10rem;
         }
         img{
@@ -68,12 +72,20 @@ main{
 }
 
 .section-2{
-    display: flex;
     margin-top: 4rem;
     .view-1{
-        width: 70%;
+        width: 100%;
     }
     .view-2{
-        width: 30%;
+        margin-top: 2rem;
+        width: 100%;
+        p{
+           font-size: 3rem;
+            @include light-weight-font();
+        }
+        h3{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
     }
 }
