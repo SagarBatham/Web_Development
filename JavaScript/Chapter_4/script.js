@@ -15,10 +15,10 @@ function abcd(){
 abcd();
 
 //2.Variable Func Expression
-var a=function(){
-    console.log("Second Type");
-}
-a();
+// var a=function(){
+//     console.log("Second Type");
+// }
+// a();
 
 //3.Anonymous Func` 
 // function(){
@@ -50,3 +50,35 @@ function abc1(a,b,c,...rest){
     console.log(a,b,c,rest)
 }
 abc1(1,2,3,4,5,6,7,8);
+
+//iife-Immediately Invoked Function Expressions
+(function abc2(){
+    console.log("iife-");
+})();
+
+// (function abc3(){
+//     var a=12;
+
+//     function setter(val){
+//         a=val;
+//     }
+//     function getter(val){
+//         console.log(val)
+//     }
+// })();
+var ans=(function abc3(){
+    var a=12;
+    console.log("Ans:",a);
+    return{
+        set:function(val){
+            a=val;
+        },
+
+        get:function(){
+            console.log(a)
+        },
+    }
+})();
+
+ans.set(35);
+ans.get();
