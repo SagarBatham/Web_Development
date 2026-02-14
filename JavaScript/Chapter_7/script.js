@@ -16,3 +16,5 @@ console.groupEnd();
 let c="JavaScript";
 console.log(c.indexOf("Script"));
 console.log(c.search("Script"));
+
+
