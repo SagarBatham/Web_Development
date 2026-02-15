@@ -5,7 +5,7 @@ boxy.innerHTML="<h1>Html Code</h1>";
 boxy.textContent="<h1>As it is Text</h1>";
 
 var b=document.querySelector("button");
-document.addEventListener("click",function(){
+b.document.addEventListener("click",function(){
     b.style.backgroundColor="red";
     b.textContent="Already Clicked";
     boxy.style.backgroundColor='Yellow';

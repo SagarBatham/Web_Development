@@ -18,5 +18,3 @@ document.addEventListener("click", function () {
         console.log("Click 2")
     }
     })
-
-
