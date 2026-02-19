@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen flex items-center justify-center bg-black">
+
+    <div class="bg-white px-10 py-8 rounded h-[200px] w-[700px] shadow-lg">
+
+        <!-- Progress Bar -->
+        <div id="progress" class="w-full bg-gray-300 rounded-full h-4 w-[]"></div>
+
+        <!-- Percentage -->
+        <div class="flex justify-end mt-1">
+            <h5 class="text-sm font-medium">0%</h5>
+        </div>
+
+        <!-- File + Button -->
+        <div class="mt-6 flex justify-between items-center">
+            <h3 class="font-semibold">Song.mp3</h3>
+
+            <button class="bg-green-600 text-white rounded active:scale-95 font-medium px-5 py-2 text-xs">
+                Download File
+            </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
