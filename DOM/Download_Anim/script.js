@@ -1,11 +1,11 @@
-var load=document.querySelector("#growth");
-var per=document.querySelector("h3");
-
+var load = document.querySelector("#growth");
+var per = document.querySelector("#percent");
+var btn = document.querySelector("#btn");
 
 var btn=document.querySelector("button");
 btn.addEventListener('click',function(){
+    var grow=0;
     var interval = setInterval(function () {
-
         if (grow <= 100) {
             load.style.width = grow + "%";
             per.innerHTML = grow + "%";
@@ -18,7 +18,4 @@ btn.addEventListener('click',function(){
         }
 
     }, 50);
-    setTimeout(() => {
-        clearInterval(l);
-    }, 5000);
 })
