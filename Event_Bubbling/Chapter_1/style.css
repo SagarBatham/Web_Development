@@ -47,6 +47,11 @@ img{
     border-radius: 5px;
 }
 
-.card h2{
-    font-size: large;
+#main h2{
+    font-size: 30px;
+}
+    
+
+.card button:active{
+    transform: scale(0.95);
 }
