@@ -4,7 +4,7 @@
 // console.log(c);
 var btn=document.querySelector("button");
 var body=document.querySelector("body");
-btn.addEventListener("mousemove",function(){
+btn.addEventListener("click",function(dets){
     var up=Math.random()*100;
     var down=Math.random()*100;
     var right=Math.random()*100;
@@ -18,5 +18,6 @@ btn.addEventListener("mousemove",function(){
     a.style.right=right+"%";
     a.style.down=down+"%";
 
+    console.log(dets);
     body.appendChild(a);
 })
