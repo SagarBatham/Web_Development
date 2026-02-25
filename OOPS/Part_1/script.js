@@ -7,7 +7,7 @@
 // let a=new CupCake();
 // console.log(a);
 
-//New Way
+
 
 function Toffe(flavour,price){
     this.flavour=flavour;
@@ -20,3 +20,15 @@ console.log(a);
 console.log(b);
 
 
+//New Way Using Class
+class Car{
+    constructor(){
+        this.wheel=4;
+        this.name="BMW";
+        this.price="2Crore"
+        this.speed=200;
+    }
+}
+
+let c=new Car();
+console.log(c);
