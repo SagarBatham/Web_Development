@@ -25,3 +25,15 @@ Human.prototype.sayHello=function(){
 let h1=new Human("Sagar",21,false);
 console.log(h1);
 
+function Employee(name,age,salary){
+    this.name=name;
+    this.age=age;
+    this.salary=salary;
+}
+
+let e1=new Employee("Raghav",23,30000);
+
+Employee.prototype.printDetails=function(){
+    console.log(`My Name is ${this.name} and my age is ${this.age} and my salary is ${this.salary}`);
+};
+
