@@ -1,7 +1,10 @@
 var dta = fetch("https://api.github.com/users/SagarBatham")
-.then((data)=>{
-    return data.json();
+.then(function(raw){
+    return raw.json();
 })
 .then(function(data){
-    console.log(data);
+    console.log(data.
+avatar_url);
 })
+
+console.log(dta);
