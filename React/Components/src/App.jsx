@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
+import Create from './components/Create';
+import Read from './components/Read';
 
 function App() {
-  const [name, age] = useState([{
+    const [submittedUser, setSubmittedUser] = useState(null);
+
+  const [name, setName] = useState([{
     Name: "Sagar",
     Age: 23,
   }, {
@@ -12,60 +16,12 @@ function App() {
     Age: 21,
   }])
 
-  const [username, setUsername] = useState("");
-  const [userage, setAge] = useState(18)
-  const [submittedUser, setSubmittedUser] = useState(null);
-
-
-  // const eventHandler = (e) => {
-  //   console.log(e);
-  // }
-
-  
-  const preventReload=(e)=>{
-    const newUser={username,userage}
-    console.log("Form Submitted Succesfully")
-    console.log(newUser);
-    e.preventDefault();
-    setUsername("")
-    setAge("")
-
-    setSubmittedUser({username,userage})
-  }
-  
-
   return (
     <div>
-      <h1>Render Task</h1>
-      <form >
-        <input
-          type="text"
-          placeholder='Enter a Name'
-          onChange={(e)=>setUsername(e.target.value)}
-          value={username}
-        />
-
-        <input onChange={(e)=>setAge(e.target.value)}
-          type="number"
-          placeholder='Enter Age'
-          value={userage}
-        />
-        <button onClick={preventReload}>Submit</button>
-
-      </form>
-
+    
+      <Create setSubmittedUser={setSubmittedUser} />
       <hr />
-
-
-      {submittedUser && (
-        <div>
-        <h2>User:{submittedUser.username} </h2>
-        <h2>Age:{submittedUser.userage}</h2>
-      </div>
-      )}
-      
-
-      
+      <Read users={name} />
     </div>
 
   )
