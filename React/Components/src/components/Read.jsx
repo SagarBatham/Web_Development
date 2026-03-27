@@ -13,8 +13,8 @@ function Read({users}) {
     <div>
         
         <div>
-          <h2>Render Name</h2>
-        <h2>User:{render} </h2>
+          <ol>Render Name</ol>
+        <ol>User:{render} </ol>
 
       </div>
       

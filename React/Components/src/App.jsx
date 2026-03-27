@@ -16,10 +16,14 @@ function App() {
     Age: 21,
   }])
 
+  const adduser=(newUser)=>{
+    setName([...name, { Name: newUser.username, Age: newUser.userage }]);
+  }
+
   return (
     <div>
     
-      <Create setSubmittedUser={setSubmittedUser} />
+      <Create setSubmittedUser={adduser} />
       <hr />
       <Read users={name} />
     </div>

@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 function Create({ setSubmittedUser }) {
-    console.log({ setSubmittedUser });
-
-
     const [username, setUsername] = useState("");
     const [userage, setAge] = useState(18)
 
@@ -20,7 +17,7 @@ function Create({ setSubmittedUser }) {
     return (
         <>
             <h1>Register User</h1>
-            <form >
+            <form onSubmit={preventReload}>
                 <input
                     type="text"
                     placeholder='Enter a Name'
@@ -33,7 +30,7 @@ function Create({ setSubmittedUser }) {
                     placeholder='Enter Age'
                     value={userage}
                 />
-                <button onSubmit={preventReload}>Submit</button>
+                <button type="submit">Submit</button>
 
             </form>
         </>
