@@ -1,4 +1,6 @@
 import "./Read.css";
+import { toast } from "react-toastify";
+
 
 function Read(props) {
   const task = props.task;
@@ -7,16 +9,17 @@ function Read(props) {
   const dltTask = (id) => {
     const UpdateTask = task.filter((t) => t.id !== id);
     settask(UpdateTask);
+    toast.error("Todo Deleted")
+
   };
 
   const rendertask = task.map((t) => {
     return (
       <li key={t.id} className="mb-4 flex items-center bg-gray-900 rounded justify-between p-3 font-thin">
-        
+
         <span className="text-lg p-2 rounded text-m">
           {t.title}
         </span>
-
         <span
           onClick={() => dltTask(t.id)}
           className="text-sm border border-black px-3 py-2 rounded text-red-600 cursor-pointer hover:bg-red-100 ml-3 font-bold"
