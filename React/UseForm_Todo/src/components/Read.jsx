@@ -1,10 +1,15 @@
+import { useContext } from "react";
 import "./Read.css";
 import { toast } from "react-toastify";
+import {todocontext} from '../Wrapper'
 
 
-function Read(props) {
-  const task = props.task;
-  const settask = props.settask;
+function Read() {
+  
+  const a=useContext(todocontext);
+  console.log(a);
+  
+const[task,settask]=useContext(todocontext);
 
   const dltTask = (id) => {
     const UpdateTask = task.filter((t) => t.id !== id);

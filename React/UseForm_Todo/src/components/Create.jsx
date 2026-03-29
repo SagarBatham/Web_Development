@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Fragment } from "react";
 import { nanoid } from 'nanoid'
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import {todocontext} from '../Wrapper'
 
 
-function Create(props) {
 
-    const task=props.task;
+function Create() {
 
-    const settask=props.settask;
+    const[task,settask]=useContext(todocontext)
 
     const{register,handleSubmit,reset,formState:{errors}}=useForm();
 
