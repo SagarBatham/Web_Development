@@ -10,6 +10,8 @@ import {todocontext} from '../Wrapper'
 function Create() {
 
     const[task,settask]=useContext(todocontext)
+    console.log(task);
+    
 
     const{register,handleSubmit,reset,formState:{errors}}=useForm();
 
