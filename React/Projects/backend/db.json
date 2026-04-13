@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "842492492942",
+      "name": "John-Doe",
+      "email": "joh@gmail.com",
+      "password": "12345"
+    },
+    {
+      "userName": "Sagar",
+      "email": "sagarkumar123abc23bc@gmail.com",
+      "password": "123456",
+      "id": "AxAnQ8X1JHM",
+      "isAdmin": true
+    },
+    {
+      "userName": "Sagar",
+      "email": "shivsagar6912@gmail.com",
+      "password": "123456",
+      "id": "pQ5QRkgpOhc",
+      "isAdmin": false
+    }
+  ],
+  "products": [
+     {
+    "id": "4",
+    "title": "MacBook Air M2",
+    "slug": "macbook-air-m2",
+    "price": 119999,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+    "description": "Apple MacBook Air powered by M2 chip with ultra-thin design and high performance."
+  }
+  ],
+  "cart": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
