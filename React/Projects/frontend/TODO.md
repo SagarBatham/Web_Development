@@ -1,9 +1,6 @@
-# Redux State Fix TODO
+# Fix Profile Update 404 (/users/undefined)
 
 ## Steps:
-- [x] Step 1: Edit userAction.jsx - Add dispatch(loadusers) after login token save ✅
-- [x] Step 2: Edit Mainroutes.jsx - Fix selector to state.userreducer.users ✅
-- [ ] Step 3: Test login → state updates immediately
-- [ ] Step 4: Mark complete
-
-Current: Steps 1-2 complete ✅
+- [x] Step 1: Edit ProfileUser.jsx - Update updateHandler to pass correct users.id and merge id into data payload.
+- [ ] Step 2: Test the update functionality (login → profile → update form → check network/localStorage). Guards added to handle null users.
+- [ ] Step 3: Update TODO.md with completion and attempt_completion.

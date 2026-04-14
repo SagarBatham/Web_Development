@@ -7,21 +7,25 @@ import Register from '../pages/Register'
 import { useSelector } from 'react-redux'
 import CreateProducts from '../pages/admin/CreateProducts'
 import UpdateProducts from '../pages/admin/UpdateProducts'
+import ProductDetails from '../pages/admin/ProductDetails'
+import ProfileUser from '../pages/users/ProfileUser'
+import PageNotFound from '../pages/PageNotFound'
 
 const Mainroutes = () => {
-  const user = useSelector((state) => state.userreducer.users);
-  console.log('Users:', user);
+  const users=useSelector((state)=>state.userreducer.users)
+  console.log(users);
   
   return (
     <div>
         <Routes>
-            <Route path='/' element={<Home/>}>Home</Route>
-            <Route path='/products' element={<Products/>}>Products</Route>
+            <Route path='/' element={<Products/>}>Home</Route>
             <Route path='/login' element={<Login/>}>Login</Route>
             <Route path='/register' element={<Register/>}>Register</Route>
-
+            <Route path='/products' element={<Products/>}></Route>
             <Route path='/admin/create-product' element={<CreateProducts/>}></Route>
-            <Route path='/admin/update-product/:id' element={<UpdateProducts/>}></Route>
+            <Route path='/product/:id' element={<ProductDetails/>}></Route>
+            <Route path='/setting' element={<ProfileUser/>}></Route>
+            <Route path='*' element={<PageNotFound/>}></Route>
         </Routes>
     </div>
   )

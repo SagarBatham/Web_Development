@@ -1,13 +1,19 @@
 import { nanoid } from '@reduxjs/toolkit';
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { asyncCreateProducts } from '../../store/actions/productAction';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const CreateProducts = () => {
+    const navigate=useNavigate()
+    const dispatch=useDispatch();
     const{register,handleSubmit,reset}=useForm();
     const newProduct=(product)=>{
         product.id=nanoid();
         console.log(product);
-        
+        dispatch(asyncCreateProducts(product)); 
+        navigate("/products")
     }
     const data={
         "id": "4",

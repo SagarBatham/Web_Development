@@ -1,14 +1,19 @@
 import axios from '../../api/axiosconfig'
-import { loadusers } from '../reducers/userSlice';
+import { loadusers,removeusers} from '../reducers/userSlice';
 
 
 export const asynccurrentUser=(user)=>async(dispatch,getState)=>{
     try {
-        const currUser=JSON.parse(localStorage.getItem("token"))
-        if(currUser) dispatch(loadusers(currUser))
-        else console.log("User Not Found")
+        const token = localStorage.getItem("token");
+        if (token) {
+            const currUser = JSON.parse(token);
+            dispatch(loadusers(currUser));
+        } else {
+            console.log("No token found");
+        }
     } catch (error) {
-        console.log(error);       
+        console.log("Invalid token:", error);
+        localStorage.removeItem("token");
     }
 }
 
@@ -16,6 +21,8 @@ export const asynccurrentUser=(user)=>async(dispatch,getState)=>{
 export const asynclogoutUser=(user)=>async(dispatch,getState)=>{
     try {
         localStorage.removeItem("token")
+        console.log("User LogOut Successfully");
+        dispatch(removeusers());
     } catch (error) {
         console.log(error);       
     }
@@ -50,4 +57,30 @@ export const asyncloginUser = (user) => async (dispatch, getState) => {
         console.log(error);
     }
 };
+
+export const asynUpdateUser=(id,user)=>async (dispatch,getState)=>{
+    try {
+        
+        const data=await axios.patch("/users/"+id,user);
+        console.log(data);
+        localStorage.setItem("token",JSON.stringify(data))
+        dispatch(asynccurrentUser());
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+
+export const asynDeleteUser=(id)=>async (dispatch,getState)=>{
+    try {
+        
+        await axios.delete("/users/"+id);
+        dispatch(removeusers())
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
 
