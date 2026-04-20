@@ -61,10 +61,10 @@ export const asyncloginUser = (user) => async (dispatch, getState) => {
 export const asynUpdateUser=(id,user)=>async (dispatch,getState)=>{
     try {
         
-        const data=await axios.patch("/users/"+id,user);
-        console.log(data);
-        localStorage.setItem("token",JSON.stringify(data))
-        dispatch(asynccurrentUser());
+        const res=await axios.patch("/users/"+id,user);
+        console.log(res);
+        localStorage.setItem("token",JSON.stringify(res.data))
+        dispatch(asynccurrentUser(user));
         
     } catch (error) {
         console.log(error);

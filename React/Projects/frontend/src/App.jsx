@@ -9,11 +9,17 @@ import { asyncGetProducts } from './store/actions/productAction'
 const App = () => {
   const dispatch=useDispatch();
   const state = useSelector((state) => state);
+  const{users}=useSelector((state) => state.userreducer);
+  const{products}=useSelector((state) => state.productreducer);
 
   useEffect(()=>{
-    dispatch(asynccurrentUser());
-    dispatch(asyncGetProducts())
-  },[])
+    !users && dispatch(asynccurrentUser());
+  },[users])
+
+
+  useEffect(()=>{
+    products.length==0 && dispatch(asyncGetProducts())
+  },[products])
 
   return (
     <div className='text-white font-thin w-screen h-screen bg-gray-800 px-[5%] text-3xl overflow-auto'>

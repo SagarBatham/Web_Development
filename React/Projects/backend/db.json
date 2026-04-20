@@ -5,26 +5,393 @@
       "userName": "Shiva",
       "email": "sagarkumar123abc23bc@gmail.com",
       "password": "12345",
-      "isAdmin":false
+      "isAdmin": false,
+      "cart": []
     },
     {
       "userName": "Sagar",
       "email": "shivsagar6912@gmail.com",
       "password": "123456",
       "id": "98CuvzQmt5M",
-      "isAdmin": true
+      "isAdmin": true,
+      "cart": [
+        {
+          "products": [
+            {
+              "id": "6",
+              "title": "iPad Pro",
+              "model": "ipad-pro",
+              "price": 89999,
+              "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
+              "desc": "High performance tablet."
+            }
+          ],
+          "quantity": 1
+        }
+      ]
     }
   ],
   "products": [
     {
-      "id": "4",
+      "id": "1",
       "title": "MacBook Air M2",
       "model": "macbook-air-m2",
       "price": 119999,
-      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-      "desc": "Apple MacBook Air powered by M2 chip with ultra-thin design and high performance."
+      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800",
+      "desc": "Apple MacBook Air powered by M2 chip."
+    },
+    {
+      "id": "2",
+      "title": "iPhone 14 Pro",
+      "model": "iphone-14-pro",
+      "price": 129999,
+      "img": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800",
+      "desc": "Premium iPhone with powerful performance."
+    },
+    {
+      "id": "3",
+      "title": "Samsung Galaxy",
+      "model": "galaxy-s23",
+      "price": 79999,
+      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=800",
+      "desc": "High-end Android smartphone."
+    },
+    {
+      "id": "4",
+      "title": "Sony Headphones",
+      "model": "sony-headphones",
+      "price": 29999,
+      "img": "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?w=800",
+      "desc": "Noise cancelling headphones."
+    },
+    {
+      "id": "5",
+      "title": "Dell Laptop",
+      "model": "dell-xps",
+      "price": 99999,
+      "img": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800",
+      "desc": "Premium ultrabook laptop."
+    },
+    {
+      "id": "6",
+      "title": "iPad Pro",
+      "model": "ipad-pro",
+      "price": 89999,
+      "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
+      "desc": "High performance tablet."
+    },
+    {
+      "id": "7",
+      "title": "Smart Watch",
+      "model": "smart-watch",
+      "price": 45999,
+      "img": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800",
+      "desc": "Fitness and smart tracking watch."
+    },
+    {
+      "id": "8",
+      "title": "Gaming Keyboard",
+      "model": "rgb-keyboard",
+      "price": 4999,
+      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800",
+      "desc": "Mechanical RGB keyboard."
+    },
+    {
+      "id": "9",
+      "title": "Gaming Mouse",
+      "model": "gaming-mouse",
+      "price": 3999,
+      "img": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800",
+      "desc": "High precision gaming mouse."
+    },
+    {
+      "id": "10",
+      "title": "Smart TV",
+      "model": "smart-tv",
+      "price": 54999,
+      "img": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800",
+      "desc": "4K UHD Smart TV."
+    },
+    {
+      "id": "11",
+      "title": "Bluetooth Speaker",
+      "model": "speaker",
+      "price": 7999,
+      "img": "https://images.unsplash.com/photo-1585386959984-a4155223169f?w=800",
+      "desc": "Portable speaker with bass."
+    },
+    {
+      "id": "12",
+      "title": "DSLR Camera",
+      "model": "dslr",
+      "price": 65999,
+      "img": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800",
+      "desc": "Professional DSLR camera."
+    },
+    {
+      "id": "13",
+      "title": "Gaming Chair",
+      "model": "gaming-chair",
+      "price": 14999,
+      "img": "https://images.unsplash.com/photo-1582582429416-5d6b5b47f6a1?w=800",
+      "desc": "Comfortable gaming chair."
+    },
+    {
+      "id": "14",
+      "title": "External SSD",
+      "model": "ssd",
+      "price": 8999,
+      "img": "https://images.unsplash.com/photo-1612197529196-6c3f66c36c52?w=800",
+      "desc": "Fast portable SSD."
+    },
+    {
+      "id": "15",
+      "title": "AirPods",
+      "model": "airpods",
+      "price": 24999,
+      "img": "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=800",
+      "desc": "Wireless earbuds."
+    },
+    {
+      "id": "16",
+      "title": "Phone Stand",
+      "model": "stand",
+      "price": 999,
+      "img": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=800",
+      "desc": "Adjustable phone stand."
+    },
+    {
+      "id": "17",
+      "title": "Power Bank",
+      "model": "powerbank",
+      "price": 1999,
+      "img": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800",
+      "desc": "Portable charger."
+    },
+    {
+      "id": "18",
+      "title": "Monitor",
+      "model": "monitor",
+      "price": 19999,
+      "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800",
+      "desc": "4K computer monitor."
+    },
+    {
+      "id": "19",
+      "title": "WiFi Router",
+      "model": "router",
+      "price": 2999,
+      "img": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800",
+      "desc": "High speed router."
+    },
+    {
+      "id": "20",
+      "title": "Printer",
+      "model": "printer",
+      "price": 8999,
+      "img": "https://images.unsplash.com/photo-1563770660941-10a636076c42?w=800",
+      "desc": "All-in-one printer."
+    },
+    {
+      "id": "26",
+      "title": "HP Pavilion Laptop",
+      "model": "hp-pavilion",
+      "price": 74999,
+      "img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
+      "desc": "Powerful laptop for everyday use."
+    },
+    {
+      "id": "27",
+      "title": "Asus ROG Gaming Laptop",
+      "model": "asus-rog",
+      "price": 149999,
+      "img": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800",
+      "desc": "High performance gaming laptop."
+    },
+    {
+      "id": "28",
+      "title": "Lenovo ThinkPad",
+      "model": "thinkpad-x1",
+      "price": 124999,
+      "img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800",
+      "desc": "Business class durable laptop."
+    },
+    {
+      "id": "29",
+      "title": "Apple Magic Keyboard",
+      "model": "magic-keyboard",
+      "price": 9999,
+      "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
+      "desc": "Wireless keyboard by Apple."
+    },
+    {
+      "id": "30",
+      "title": "Logitech Mouse",
+      "model": "logitech-mx",
+      "price": 5999,
+      "img": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=800",
+      "desc": "Ergonomic wireless mouse."
+    },
+    {
+      "id": "31",
+      "title": "JBL Bluetooth Speaker",
+      "model": "jbl-flip",
+      "price": 6999,
+      "img": "https://images.unsplash.com/photo-1585386959984-a4155223169f?w=800",
+      "desc": "Portable speaker with deep bass."
+    },
+    {
+      "id": "32",
+      "title": "Canon DSLR Camera",
+      "model": "canon-eos",
+      "price": 65999,
+      "img": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800",
+      "desc": "High quality DSLR camera."
+    },
+    {
+      "id": "33",
+      "title": "Sony PlayStation 5",
+      "model": "ps5",
+      "price": 54999,
+      "img": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800",
+      "desc": "Next-gen gaming console."
+    },
+    {
+      "id": "34",
+      "title": "Xbox Series X",
+      "model": "xbox-series-x",
+      "price": 52999,
+      "img": "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?w=800",
+      "desc": "Powerful gaming console."
+    },
+    {
+      "id": "35",
+      "title": "Gaming Monitor",
+      "model": "144hz-monitor",
+      "price": 19999,
+      "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800",
+      "desc": "High refresh rate gaming monitor."
+    },
+    {
+      "id": "36",
+      "title": "Office Chair",
+      "model": "ergonomic-chair",
+      "price": 12999,
+      "img": "https://images.unsplash.com/photo-1582582429416-5d6b5b47f6a1?w=800",
+      "desc": "Comfortable ergonomic chair."
+    },
+    {
+      "id": "37",
+      "title": "Smart Refrigerator",
+      "model": "lg-smart-fridge",
+      "price": 89999,
+      "img": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800",
+      "desc": "Smart fridge with modern features."
+    },
+    {
+      "id": "38",
+      "title": "Washing Machine",
+      "model": "samsung-washer",
+      "price": 45999,
+      "img": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=800",
+      "desc": "Fully automatic washing machine."
+    },
+    {
+      "id": "39",
+      "title": "Air Conditioner",
+      "model": "split-ac",
+      "price": 38999,
+      "img": "https://images.unsplash.com/photo-1581574209788-2cbb7c8c0d1d?w=800",
+      "desc": "Energy efficient AC."
+    },
+    {
+      "id": "40",
+      "title": "Microwave Oven",
+      "model": "microwave",
+      "price": 11999,
+      "img": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800",
+      "desc": "Quick cooking microwave."
+    },
+    {
+      "id": "41",
+      "title": "Electric Kettle",
+      "model": "kettle",
+      "price": 1499,
+      "img": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800",
+      "desc": "Fast boiling kettle."
+    },
+    {
+      "id": "42",
+      "title": "Coffee Maker",
+      "model": "coffee-machine",
+      "price": 4999,
+      "img": "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800",
+      "desc": "Automatic coffee machine."
+    },
+    {
+      "id": "43",
+      "title": "Smart Bulb",
+      "model": "wifi-bulb",
+      "price": 999,
+      "img": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800",
+      "desc": "WiFi enabled smart bulb."
+    },
+    {
+      "id": "44",
+      "title": "Security Camera",
+      "model": "cctv-camera",
+      "price": 2999,
+      "img": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=800",
+      "desc": "Home security camera."
+    },
+    {
+      "id": "45",
+      "title": "Smart Door Lock",
+      "model": "door-lock",
+      "price": 8999,
+      "img": "https://images.unsplash.com/photo-1580894908361-967195033215?w=800",
+      "desc": "Digital smart lock."
+    },
+    {
+      "id": "46",
+      "title": "Tablet Android",
+      "model": "android-tablet",
+      "price": 19999,
+      "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
+      "desc": "Affordable Android tablet."
+    },
+    {
+      "id": "47",
+      "title": "Smartphone Budget",
+      "model": "budget-phone",
+      "price": 14999,
+      "img": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800",
+      "desc": "Budget smartphone."
+    },
+    {
+      "id": "48",
+      "title": "Gaming Controller",
+      "model": "controller",
+      "price": 4999,
+      "img": "https://images.unsplash.com/photo-1587202372775-e229f172b9d9?w=800",
+      "desc": "Wireless gaming controller."
+    },
+    {
+      "id": "49",
+      "title": "VR Glasses",
+      "model": "vr-glasses",
+      "price": 19999,
+      "img": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800",
+      "desc": "Immersive VR experience."
+    },
+    {
+      "id": "50",
+      "title": "Drone Camera",
+      "model": "drone",
+      "price": 45999,
+      "img": "https://images.unsplash.com/photo-1508614999368-9260051292e5?w=800",
+      "desc": "High quality drone camera."
     }
   ],
-  "cart": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

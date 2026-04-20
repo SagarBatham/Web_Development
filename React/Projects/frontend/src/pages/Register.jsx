@@ -12,6 +12,7 @@ const Register = () => {
   const registerHandler=(user)=>{
     user.id=nanoid();
     user.isAdmin=false
+    user.cart=[]
     dispatch(asyncregisterUser(user));
     console.log(user);
     navigate("/login")
