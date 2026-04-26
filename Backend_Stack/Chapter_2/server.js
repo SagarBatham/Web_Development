@@ -1,9 +1,16 @@
-var http=require('http');
+//Use of Express
+var express=require('express')
 
-const server=http.createServer((req,res)=>{{
-    res.end("Fk You")
-}})
+const app=express()
 
-server.listen(3000,()=>{
-    console.log("Server running on Port 3000");
+app.get("/home",(req,res)=>{
+    res.send("Welcome to Home")
+})
+
+app.get("/about",(req,res)=>{
+    res.send("Welcome to About")
+})
+
+app.listen(3000,()=>{
+    console.log("Server Started");
 })
