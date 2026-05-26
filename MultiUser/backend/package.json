@@ -1,5 +1,5 @@
 {
-  "name": "social_media_project",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,16 +11,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@google/genai": "^2.3.0",
-    "@imagekit/nodejs": "^7.6.1",
-    "bcryptjs": "^3.0.3",
+    "@google/genai": "^2.6.0",
+    "@pinecone-database/pinecone": "^3.0.3",
+    "bcrypt": "^6.0.0",
+    "cookie": "^1.1.1",
     "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "imagekit": "^6.0.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.6.2",
-    "multer": "^2.1.1",
-    "uuid": "^14.0.0"
+    "socket.io": "^4.8.3"
   }
 }
