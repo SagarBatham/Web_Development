@@ -1,0 +1,343 @@
+/* Mobile First Approach */
+.login-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  color: #ececf1;
+  overflow-y: auto;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card {
+    margin-bottom: 50px;
+  background: rgba(32, 33, 35, 0.8);
+  border: 1px solid #404040;
+  border-radius: 12px;
+  padding: 1.5rem 1.2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.login-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+  color: #fff;
+}
+
+.login-header p {
+  font-size: 0.85rem;
+  color: #b4b7c3;
+  margin: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ececf1;
+}
+
+.password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-header label {
+  margin: 0;
+}
+
+.forgot-password {
+  font-size: 0.8rem;
+  color: #10a37f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #0d8c6d;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  padding: 0.6rem 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #404040;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+  border-color: #10a37f;
+  background: rgba(16, 163, 127, 0.1);
+  box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
+}
+
+.input-error {
+  border-color: #ef4444 !important;
+  background: rgba(239, 68, 68, 0.05) !important;
+}
+
+.error-message {
+  font-size: 0.8rem;
+  color: #ef4444;
+  margin-top: -0.3rem;
+}
+
+/* Checkbox Style */
+.form-group.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #10a37f;
+}
+
+.form-group.checkbox label {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 0.9rem 1.5rem;
+  background: linear-gradient(135deg, #10a37f 0%, #0d8c6d 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #0d8c6d 0%, #0a6b55 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(16, 163, 127, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 0.8rem 0;
+  color: #565869;
+  font-size: 0.75rem;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #404040, transparent);
+}
+
+.divider span {
+  background: rgba(32, 33, 35, 0.8);
+  padding: 0 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social-btn {
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  color: #ececf1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.social-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #10a37f;
+  color: #10a37f;
+}
+
+.google-btn span,
+.github-btn span {
+  font-size: 1rem;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #404040;
+}
+
+.login-footer p {
+  font-size: 0.75rem;
+  color: #b4b7c3;
+  margin: 0;
+}
+
+.login-footer a {
+  color: #10a37f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+  color: #0d8c6d;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .login-wrapper {
+    max-width: 420px;
+  }
+
+  .login-card {
+    padding: 1.8rem;
+  }
+
+  .login-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .login-form {
+    gap: 1rem;
+  }
+
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 0.7rem 0.9rem;
+  }
+
+  .social-login {
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .social-btn {
+    flex: 1;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .login-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .login-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-header p {
+    font-size: 0.85rem;
+  }
+
+  .login-form {
+    gap: 1.2rem;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+
+  .password-header label {
+    font-size: 0.85rem;
+  }
+
+  .forgot-password {
+    font-size: 0.75rem;
+  }
+
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 0.65rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .form-group.checkbox label {
+    font-size: 0.8rem;
+  }
+
+  .submit-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .divider {
+    margin: 1.2rem 0;
+    font-size: 0.8rem;
+  }
+
+  .social-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+    gap: 0.6rem;
+  }
+
+  .google-btn span,
+  .github-btn span {
+    font-size: 0.9rem;
+  }
+
+  .login-footer p {
+    font-size: 0.8rem;
+  }
+}
